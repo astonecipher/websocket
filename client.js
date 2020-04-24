@@ -20,8 +20,8 @@ $(function () {
     $('span').hide();
     return;
   }
-  // open connection
-  var connection = new WebSocket('ws://astonecipher-websocket.herokuapp.com:1337');
+  // open connection astonecipher-websocket.herokuapp.com
+  var connection = new WebSocket('ws://localhost:1337');
   connection.onopen = function () {
     // first we want users to enter their names
     input.removeAttr('disabled');
